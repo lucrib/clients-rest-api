@@ -11,7 +11,7 @@ class Serializable(object):
 
 
 class Client(Serializable):
-    def __init__(self, name, date_of_birth, email, id_=None):
+    def __init__(self, name=None, date_of_birth=None, email=None, id_=None):
         super(Client, self).__init__()
         self.name = name
         self.date_of_birth = date_of_birth
