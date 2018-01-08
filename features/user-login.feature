@@ -1,3 +1,5 @@
+#language: en
+
 Feature: User login
   In order to login to the api
   As an api user
@@ -5,7 +7,7 @@ Feature: User login
   The response should be in json format
   If I send a wrong combination of user/password I should receive a 403 http status code
 
-  Scenario: Login to the api with valida credentials
+  Scenario: Login to the api with valid credentials
     Given the username "username"
     And the password "password"
     When I send a "get" request to the "/login" endpoint

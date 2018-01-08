@@ -1,11 +1,12 @@
 import time
 from multiprocessing import Process
-
-from client.client_api import app
+from client import db
+from client.apis import app
 
 
 def before_all(context):
     print('before_all')
+    db.create_all()
     context.server = Process(target=app.run, name='Flask Server', kwargs=dict(debug=True, port=5000))
     context.server.start()
     time.sleep(1)  # To make sure server is already up
