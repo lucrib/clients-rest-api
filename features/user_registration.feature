@@ -1,3 +1,5 @@
+#language: en
+
 Feature: User registration
   In order to register a new user
   As an api user
