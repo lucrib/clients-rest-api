@@ -17,7 +17,9 @@ def step_impl(context, password):
 @when(u'I send a "{method}" request to the "{endpoint}" endpoint')
 def step_impl(context, method, endpoint):
     auth = HTTPBasicAuth(context.username, context.password)
-    context.response = request(method, context.base_uri + endpoint, auth=auth)
+    login_uri = context.base_uri + endpoint
+    print("Login URI ====>", login_uri)
+    context.response = request(method, login_uri, auth=auth)
 
 
 @then(u'I should receive a "{status_code}" status code')

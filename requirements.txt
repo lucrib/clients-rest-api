@@ -1,12 +1,15 @@
+allure-behave==2.3.1b1
+allure-python-commons==2.3.1b1
 aniso8601==2.0.0
+attrs==17.4.0
 behave==1.2.5
-certifi==2017.11.5
+certifi==2018.1.18
 cffi==1.11.2
 chardet==3.0.4
 click==6.7
 coverage==4.4.2
 enum34==1.1.6
-Faker==0.8.8
+Faker==0.8.10
 Flask==0.12.2
 Flask-RESTful==0.3.6
 Flask-SQLAlchemy==2.3.2
@@ -17,6 +20,7 @@ Jinja2==2.10
 MarkupSafe==1.0
 parse==1.8.2
 parse-type==0.4.2
+pluggy==0.6.0
 pyasn1==0.4.2
 pycparser==2.18
 PyHamcrest==1.9.0
@@ -25,7 +29,7 @@ python-dateutil==2.6.1
 pytz==2017.3
 requests==2.18.4
 six==1.11.0
-SQLAlchemy==1.2.0
+SQLAlchemy==1.2.2
 text-unidecode==1.1
 urllib3==1.22
 Werkzeug==0.14.1
